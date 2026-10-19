@@ -21,6 +21,13 @@
 body.gallery-open{overflow:hidden}
 @media(hover:hover){.photo-open:hover img{transform:scale(1.04)}}
 @media(max-width:350px){.photo-grid{gap:5px}}
+
+/* Dragon silk background – CHINA '26 */
+body{background:#190c13;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(180deg,rgba(7,10,21,.60),rgba(7,10,21,.72)),url("./bg-dragon.jpg");background-repeat:no-repeat,repeat-x;background-size:cover,auto 100%;background-position:center,center top}
+main{position:relative;z-index:1}
+.card{background:rgba(24,34,53,.91);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+nav{background:rgba(14,14,25,.84);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
 </style></head><body><main><header><div class="muted">PERSONAL TRAVEL COMPANION</div><h1>CHINA ’26 ✈️</h1><p>23 октября — 3 ноября 2026<br>Владивосток · Пекин · Чэнду · Чунцин</p><span class="tag">12 дней</span> <span class="tag">Фото: 23–24 окт · 27 снимков</span> <span class="tag">Локальные отметки посещения</span></header><nav><div class="days" id="days"></div></nav><section id="content"></section><p class="foot">Время — местное. Расписание достопримечательностей предварительное. Кнопка «Карты» открывает поиск Apple Maps по китайскому названию или адресу, а не гарантированную карточку. Проверяй точку перед поездкой. Для навигации может понадобиться интернет. На рейсе KN878 23 октября кнопка открывает Яндекс Go с аэропортом в качестве назначения; поездку нужно подтвердить в сервисе. Не публикуй номера бронирований в открытом репозитории.</p></main><script>
 const hotelCD='四川省成都市成华区望平街33号';
 const stop=(time,name,cn,note='',kind='place')=>({time,name,cn,note,kind});
