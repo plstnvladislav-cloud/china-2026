@@ -21,7 +21,7 @@
 body.gallery-open{overflow:hidden}
 @media(hover:hover){.photo-open:hover img{transform:scale(1.04)}}
 @media(max-width:350px){.photo-grid{gap:5px}}
-</style></head><body><main><header><div class="muted">PERSONAL TRAVEL COMPANION</div><h1>CHINA ’26 ✈️</h1><p>23 октября — 3 ноября 2026<br>Владивосток · Пекин · Чэнду · Чунцин</p><span class="tag">12 дней</span> <span class="tag">Фото: 24 окт · 18 снимков</span> <span class="tag">Локальные отметки посещения</span></header><nav><div class="days" id="days"></div></nav><section id="content"></section><p class="foot">Время — местное. Расписание достопримечательностей предварительное. Кнопка «Карты» открывает поиск Apple Maps по китайскому названию или адресу, а не гарантированную карточку. Проверяй точку перед поездкой. Для навигации может понадобиться интернет. На рейсе KN878 23 октября кнопка открывает Яндекс Go с аэропортом в качестве назначения; поездку нужно подтвердить в сервисе. Не публикуй номера бронирований в открытом репозитории.</p></main><script>
+</style></head><body><main><header><div class="muted">PERSONAL TRAVEL COMPANION</div><h1>CHINA ’26 ✈️</h1><p>23 октября — 3 ноября 2026<br>Владивосток · Пекин · Чэнду · Чунцин</p><span class="tag">12 дней</span> <span class="tag">Фото: 23–24 окт · 27 снимков</span> <span class="tag">Локальные отметки посещения</span></header><nav><div class="days" id="days"></div></nav><section id="content"></section><p class="foot">Время — местное. Расписание достопримечательностей предварительное. Кнопка «Карты» открывает поиск Apple Maps по китайскому названию или адресу, а не гарантированную карточку. Проверяй точку перед поездкой. Для навигации может понадобиться интернет. На рейсе KN878 23 октября кнопка открывает Яндекс Go с аэропортом в качестве назначения; поездку нужно подтвердить в сервисе. Не публикуй номера бронирований в открытом репозитории.</p></main><script>
 const hotelCD='四川省成都市成华区望平街33号';
 const stop=(time,name,cn,note='',kind='place')=>({time,name,cn,note,kind});
 const days=[
@@ -45,7 +45,7 @@ function visited(d,i){try{return localStorage.getItem(key(d,i))==='1'}catch(e){r
 function toggle(d,i,v){try{localStorage.setItem(key(d,i),v?'1':'0')}catch(e){}render()}
 function copyText(v){if(navigator.clipboard?.writeText)navigator.clipboard.writeText(v).then(()=>alert('Адрес скопирован')).catch(()=>prompt('Скопируй адрес:',v));else prompt('Скопируй адрес:',v)}
 
-const photoGalleryLookup={"24-1": "tianfu", "24-2": "ruiju", "24-3": "taikoo", "24-4": "ifs", "24-5": "chunxi", "24-6": "anshun"};
+const photoGalleryLookup={"23-0":"vvo","23-1":"daxing","23-2":"radisson","24-0":"daxing","24-1":"tianfu", "24-2": "ruiju", "24-3": "taikoo", "24-4": "ifs", "24-5": "chunxi", "24-6": "anshun"};
 let galleryState=null;
 const lightbox=document.createElement('div');
 lightbox.className='lightbox';lightbox.hidden=true;
