@@ -107,7 +107,7 @@ function visited(d,i){try{return localStorage.getItem(key(d,i))==='1'}catch(e){r
 function toggle(d,i,v){try{localStorage.setItem(key(d,i),v?'1':'0')}catch(e){}render()}
 function copyText(v){if(navigator.clipboard?.writeText)navigator.clipboard.writeText(v).then(()=>alert('Адрес скопирован')).catch(()=>prompt('Скопируй адрес:',v));else prompt('Скопируй адрес:',v)}
 
-const photoGalleryLookup={"23-0":"vvo","23-1":"daxing","23-2":"radisson","24-0":"daxing","24-1":"tianfu", "24-2": "ruiju", "24-3": "taikoo", "24-4": "ifs", "24-5": "chunxi", "24-6": "anshun"};
+const photoGalleryLookup={"23-0":"vvo","23-1":"daxing","23-2":"radisson","24-0":"daxing","24-1":"tianfu", "24-2": "ruiju", "24-3": "taikoo", "24-4": "ifs", "24-5": "chunxi", "24-6": "anshun","25-0":"wenshu","25-1":"longchaoshou","25-2":"peoplespark","25-3":"kuanzhai","25-4":"jinli","26-0":"pandabase"};
 let galleryState=null;
 const lightbox=document.createElement('div');
 lightbox.className='lightbox';lightbox.hidden=true;
